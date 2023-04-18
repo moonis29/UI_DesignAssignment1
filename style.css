@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.big-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 0 2rem;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(assets/pexels-maxyne-barcel-10402282\ 1.png);
+}
+
+.container {
+  position: relative;
+  max-width: 78rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo img {
+  margin-top: 5px;
+  width: 115px;
+  cursor: pointer;
+}
+
+.links ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.links a {
+  color: rgb(254, 194, 50);
+  margin-left: 2rem;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.order-btn {
+  padding: 5px 28px;
+  font-size: 20px;
+  font-family: "Kanit", sans-serif;
+  color: #ffff;
+  background-color: rgba(254, 80, 95, 255);
+  border: none;
+}
+
+.content-area .container {
+  text-align: center;
+}
+
+.big-title {
+  font-size: 2.8rem;
+  color: rgb(254, 194, 50);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.content-area .cta-btn {
+  margin-top: 0;
+  text-align: center;
+  padding: 8px 30px;
+  font-size: 1.5rem;
+  font-family: "Kanit", sans-serif;
+  color: #ffff;
+  background-color: rgba(254, 80, 95, 255);
+  border: none;
+}
+
+.scroll-img {
+  height: 8.5rem;
+  width: 8.5rem;
+  float: right;
+}
+
+@media screen and (max-width: 870px) {
+  .content-area {
+    padding: 2.5rem 0;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .big-title {
+    font-size: 2.2rem;
+  }
+  header .links {
+    display: none;
+  }
+  .scroll-img {
+    height: 7rem;
+    width: 7rem;
+  }
+  .bottom-area {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  .big-title {
+    font-size: 1.6rem;
+  }
+  .scroll-img {
+    height: 6rem;
+    width: 6rem;
+  }
+}
